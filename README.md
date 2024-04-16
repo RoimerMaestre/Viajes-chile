@@ -1,0 +1,1 @@
+# Se crean las respectivas carpetas movilizandonos por el terminal con los comando cd  para cambiar, mkdir para crear  carpetas y touch para crear archivos. 
