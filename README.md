@@ -12,3 +12,7 @@
 
 ### se trae los respectivos icon de font awesome , airplane, mountain y el malvado router que parecia una serpiente
 ### Se usa  container para englobar los respectivos icon con sus parrafos y de usacodifica para que al ser sm se desaparezcan los icon como lo solicita la rubrica, se usa display none de boostrap para esto. 
+
+### se agrega un container con 4 cartas internas con diferentes estilos
+
+

@@ -1,27 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-body{
-    font-family: "Raleway", "Sans serif";
-    background-color: black;
+body {
+  font-family: "Raleway", "Sans serif";
+  background-color: black;
 }
 
-header{
-    font-size: 0.8rem;
-    & a{
-        text-decoration: none;
-        color: white;
+header {
+  font-size: 0.8rem;
+  & a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.menu-nav-links a {
+  margin: 5px;
+}
+.custom-icon {
+  background-color: #45bfcd;
+  padding: 0.5rem;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.custom-h2 {
+  font-size: 1.4rem;
+  text-align: center;
+  color: #ffff;
+  text-transform: uppercase;
+}
+/* esto si que me costo, tuve que dar estilos personalizados para pisar los estilos de boostrap porque habia una imagen que quedaba mas gramde y no se porque */
+.card-img-top {
+  height: 13rem; /* Establece la altura deseada para las imágenes */
+  object-fit: cover; /* Ajusta la imagen para llenar el espacio manteniendo la proporción */
+}
+.card-title {
+  text-transform: uppercase;
+  color: #ffff;
+}
+
+.card-text {
+  color: #ffff;
+}
+
+.custom-card {
+  margin-bottom: 1rem;
+}
+/* ...... */
+form{
+    color: white;
+    & h2{
+        text-align: center;
     }
 }
 
-.menu-nav-links a{
-    margin: 5px;
-}
-.custom-icon{
-    background-color:#2b9daa;
-    padding: 0.5rem;
+.color-button-enviar{
+    background-color: #2b9daa;
+    color: white;
 }
 
-h1{
-   
-    font-size: 1.5rem;
+.input-tamaño-mensaje{
+    height: 150px;
+}
+
+footer{
+    background-color: #2b9daa;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    & h3{
+        color: white;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+    & .iconos-footer i{
+        margin: 15px 15px;
+    }
 }
