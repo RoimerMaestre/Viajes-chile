@@ -82,7 +82,7 @@ footer {
     margin: 15px 15px;
   }
 }
-#menu-nav{
+#menu-nav {
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
 }
