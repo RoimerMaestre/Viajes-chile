@@ -49,35 +49,40 @@ h1 {
 .custom-card {
   margin-bottom: 1rem;
 }
-/* ...... */
-form{
+/* ...ESTILOS PARA EL IMPUT... */
+form {
+  color: white;
+  & h2 {
+    text-align: center;
+  }
+}
+
+.color-button-enviar {
+  background-color: #2b9daa;
+  color: white;
+}
+
+.input-tamaño-mensaje {
+  height: 150px;
+}
+
+/* ESTILOS FOOTER */
+footer {
+  background-color: #2b9daa;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  & h3 {
     color: white;
-    & h2{
-        text-align: center;
-    }
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+  & .iconos-footer i {
+    margin: 15px 15px;
+  }
 }
-
-.color-button-enviar{
-    background-color: #2b9daa;
-    color: white;
-}
-
-.input-tamaño-mensaje{
-    height: 150px;
-}
-
-footer{
-    background-color: #2b9daa;
-    padding: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    & h3{
-        color: white;
-        font-weight: 200;
-        text-transform: uppercase;
-    }
-    & .iconos-footer i{
-        margin: 15px 15px;
-    }
+#menu-nav{
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }

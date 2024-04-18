@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -29,25 +29,14 @@
       src="https://kit.fontawesome.com/d5b48fda4e.js"
       crossorigin="anonymous"
     ></script>
-
-    <!-- SCRIPT DE JQUERY -->
-    <script
-      defer
-      src="https://code.jquery.com/jquery-3.7.1.js"
-      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-      crossorigin="anonymous"
-    ></script>
   </head>
 
   <body>
     <header>
-      <!-- INICIO DEL MENU DE NAVEGACIÓN -->
-      <nav
-        class="navbar fixed-top container justify-content-around navbar-dark"
-        id="mi-navbar"
-      >
+      <!-- SE INICIA MENU DE NAVEGACION -->
+      <nav id="menu-nav" class="navbar fixed-top navbar-dark">
         <div class="container-fluid">
-          <a class="" href="#">
+          <a href="#" class="navbar-brand">
             <img
               src="./assets/img/viajes.svg"
               alt="Logo"
@@ -57,16 +46,12 @@
             />
             Viajes Chile
           </a>
-          <!-- MENU DE NAVEGACIÓN VISIBLE SOLO EN PANTALLA MD EN ADELANTE -->
           <div class="menu-nav-links d-none d-md-flex">
-            <a href="" id="inicio">Inicio</a>
-            <a href="" id="quienes-somos">Quienes somos</a>
-            <a href="" id="destacados">Destacados</a>
-            <a href="" id="contacto">Contactos</a>
-            <!-- FIN MENU DE NAVEGACIÓN VISIBLE SOLO EN PANTALLA MD EN ADELANTE -->
+            <a href="#carouselExampleFade">Inicio</a>
+            <a href="#quienes-somos">Quiénes somos</a>
+            <a href="#destacados">Destacados</a>
+            <a href="#contacto">Contacto</a>
           </div>
-
-          <!-- MENU DE NAVEGACIÓN VISIBLE EN PANTALLA SM PARA ABAJO -->
           <div class="d-block d-md-none text-white">
             <button
               class="navbar-toggler btn btn-outline-primary"
@@ -85,48 +70,48 @@
               aria-labelledby="offcanvasNavbarLabel"
             >
               <div class="offcanvas-header"></div>
-              <div class="offcanvas-body">
+              <div class="offcanvas-body bg-dark">
                 <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Inicio</a>
+                    <a class="nav-link" href="#inicio">Inicio</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link" href="#">Quienes somos</a>
-                  </li>
-
-                  <li class="nav-item dropdown">
-                    <a class="nav-link" href="#">Destacados</a>
+                    <a class="nav-link" href="#quienes-somos">Quiénes somos</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#destacados">Destacados</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#contacto">Contacto</a>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
-          <!-- FIN DEL MENU DE NAVEGACIÓN VISIBLE EN PANTALLA SM PARA ABAJO -->
         </div>
       </nav>
-      <!-- FIN DEL MENU DE NAVEGACIÓN -->
-
-      <!-- SECCIÓN DE CAROUSEL -->
-      <div id="carouselExampleFade" class="carousel slide carousel-fade">
+      <!-- CAROUSEL -->
+      <section id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./assets/img/card1.jpg" class="d-block w-100" alt="..." />
+            <img
+              src="./assets/img/carousel1.jpg"
+              class="d-block w-100"
+              alt="CARD-1 PAISAJE CON MONTAÑAS"
+            />
           </div>
           <div class="carousel-item">
             <img
               src="./assets/img/carousel2.jpg"
               class="d-block w-100"
-              alt="..."
+              alt="CARD-2 ROCAS CON FORMA"
             />
           </div>
           <div class="carousel-item">
             <img
               src="./assets/img/carousel3.jpg"
               class="d-block w-100"
-              alt="..."
+              alt="CARD3 PINGUINO"
             />
           </div>
         </div>
@@ -148,22 +133,25 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+      </section>
+      <!-- TERMINO CAROUSEL -->
     </header>
+
     <main>
-      <!-- se inicia la seccion de QUIENES SOMOS? -->
-      <div class="container text-white">
+      <!-- INICIO DE SECCION QUIENES SOMOS -->
+      <!-- ojo esta seccion debera desaparecer cuando la pantalla sea pequeña -->
+      <article
+        id="quienes-somos"
+        class="container text-white d-none d-sm-block"
+      >
         <div class="row">
-          <h1 class="text-center my-5">¿Quienes somos?</h1>
+          <h1 class="text-center my-5">¿Quiénes somos?</h1>
           <div class="col-sm-4">
-            <!-- Contenedor flexible para centrar el ícono "airplane" -->
             <div
-              class="d-flex justify-content-center custom-icon d-none d-sm-block text-center my-2"
+              class="d-flex justify-content-center custom-icon text-center my-2"
             >
-              <!-- Ícono de Font Awesome "airplane" -->
               <i class="fas fa-plane"></i>
             </div>
-
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Accusantium, blanditiis! Ullam eos, quas nulla reprehenderit
@@ -178,21 +166,14 @@
               temporibus molestiae saepe! Molestiae officiis officia architecto.
               Facilis deserunt fugiat cupiditate magnam!
             </p>
-
-            <!-- Contenedor flexible para centrar el ícono "mountain" -->
             <div
-              class="d-flex justify-content-center custom-icon d-none d-sm-block text-center my-2"
+              class="d-flex justify-content-center custom-icon text-center my-2"
             >
-              <!-- Ícono de Font Awesome "mountain" -->
               <i class="fa fa-mountain"></i>
             </div>
           </div>
           <div class="col-sm-4 my-2">
-            <!-- Contenedor flexible para centrar el ícono "router" -->
-            <div
-              class="d-flex justify-content-center text-center custom-icon d-none d-sm-block my-2"
-            >
-              <!-- Ícono de Font Awesome "router", odie este puto icon, pense que era una serpiente al principio, no lo conseguia -->
+            <div class="d-flex justify-content-center text-center custom-icon">
               <i class="fas fa-route"></i>
             </div>
             <p>
@@ -203,10 +184,11 @@
             </p>
           </div>
         </div>
-      </div>
-      <!-- fin de la seccion de QUIENES SOMOS? -->
-      <!-- Inicio de la sección de DESTACADOS -->
-      <div class="container">
+      </article>
+      <!-- TERMINO DE SECCION DE QUIENES SOMOS -->
+
+      <!-- INICIO DE SECCION DE DESTACADOS -->
+      <section id="destacados" class="container">
         <h2 class="custom-h2 my-5">Destacados</h2>
         <div class="row">
           <div
@@ -219,15 +201,14 @@
                 alt="card1"
               />
               <div class="card-body">
-                <h5 class="card-title">montañas bellas</h5>
+                <h5 class="card-title">Montañas bellas</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Algunos ejemplos rápidos de texto para construir sobre el
+                  título de la tarjeta y componer el contenido de la tarjeta.
                 </p>
               </div>
             </div>
           </div>
-
           <div
             class="col-sm-6 col-lg-3 custom-card d-flex justify-content-center align-items-center"
           >
@@ -238,15 +219,14 @@
                 alt="card2"
               />
               <div class="card-body">
-                <h5 class="card-title">paisajes unicos</h5>
+                <h5 class="card-title">Paisajes únicos</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Algunos ejemplos rápidos de texto para construir sobre el
+                  título de la tarjeta y componer el contenido de la tarjeta.
                 </p>
               </div>
             </div>
           </div>
-
           <div
             class="col-sm-6 col-lg-3 custom-card d-flex justify-content-center align-items-center"
           >
@@ -257,15 +237,14 @@
                 alt="card3"
               />
               <div class="card-body">
-                <h5 class="card-title">desiertos</h5>
+                <h5 class="card-title">Desiertos</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Algunos ejemplos rápidos de texto para construir sobre el
+                  título de la tarjeta y componer el contenido de la tarjeta.
                 </p>
               </div>
             </div>
           </div>
-
           <div
             class="col-sm-6 col-lg-3 custom-card d-flex justify-content-center align-items-center"
           >
@@ -276,66 +255,116 @@
                 alt="card4"
               />
               <div class="card-body">
-                <h5 class="card-title">bosques humedos</h5>
+                <h5 class="card-title">Bosques húmedos</h5>
                 <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
+                  Algunos ejemplos rápidos de texto para construir sobre el
+                  título de la tarjeta y componer el contenido de la tarjeta.
                 </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- cierre de la sesion de DESTACADO -->
-      <!-- SECCIÓN INICIAL DEL INPUT -->
-      <form class="container my-5">
-        <h2>Contacto</h2>
+      </section>
+      <!-- TERMINO DE SECCION DE DESTACADOS -->
+
+      <!--INICIO DE SECCION DE CONTACTO-->
+      <section id="contacto" class="container my-5">
+        <h2 class="text-center text-white">Contacto</h2>
         <hr />
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Nombre</label>
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Apellido</label>
-          <input
-            type="password"
-            class="form-control"
-            id="exampleInputPassword1"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Mensaje</label>
-          <input
-            type="password"
-            class="form-control input-tamaño-mensaje"
-            id="exampleInputPassword1"
-          />
-        </div>
-        <button type="submit" class="btn color-button-enviar">Enviar</button>
-      </form>
-      <!-- FINAL DEL INPUT -->
+        <form>
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              aria-describedby="nombreHelp"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellido" />
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </section>
+      <!-- TERMINO DE SECCION DE CONTACTO -->
     </main>
+    <!-- FOOTER -->
     <footer>
       <div>
         <h3>Viajes Chile</h3>
       </div>
       <div class="iconos-footer">
-        <i class="fa-brands fa-square-github fa-2xl" style="color: #ffffff"></i>
-        <i class="fa-brands fa-linkedin fa-2xl" style="color: #ffffff"></i>
-        <i
-          class="fa-brands fa-square-twitter fa-2xl"
-          style="color: #ffffff"
-        ></i>
-        <i
-          class="fa-brands fa-square-facebook fa-2xl"
-          style="color: #ffffff"
-        ></i>
+        <!-- Icono de git-hub -->
+        <a
+          href="https://github.com/RoimerMaestre/Viajes-chile"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i
+            class="fab fa-github-square fa-2x"
+            style="color: #ffffff"
+            data-bs-toggle="tooltip"
+            title="GitHub"
+          ></i>
+        </a>
+        <!-- Icono de LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/tu_usuario"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i
+            class="fab fa-linkedin fa-2x"
+            style="color: #ffffff"
+            data-bs-toggle="tooltip"
+            title="LinkedIn"
+          ></i>
+        </a>
+
+        <!-- Icono de Twitter -->
+        <a
+          href="https://twitter.com/tu_usuario"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i
+            class="fab fa-twitter-square fa-2x"
+            style="color: #ffffff"
+            data-bs-toggle="tooltip"
+            title="Twitter"
+          ></i>
+        </a>
+
+        <!-- Icono de Facebook -->
+        <a
+          href="https://www.facebook.com/tu_usuario"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i
+            class="fab fa-facebook-square fa-2x"
+            style="color: #ffffff"
+            data-bs-toggle="tooltip"
+            title="Facebook"
+          ></i>
+        </a>
       </div>
     </footer>
+
+    <!-- SCRIPT DE JQUERY -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- SCRIPT PARA JAVASCRIPT -->
+    <script src="assets/javascript/index.js"></script>
   </body>
 </html>
