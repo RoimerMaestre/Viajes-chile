@@ -1,4 +1,6 @@
-# Se crean las respectivas carpetas movilizandonos por el terminal con los comando cd para cambiar, mkdir para crear carpetas y touch para crear archivos.
+# DESAFIO-VIAJES-CHILE
+
+## Se crean las respectivas carpetas movilizandonos por el terminal con los comando cd para cambiar, mkdir para crear carpetas y touch para crear archivos.
 
 ## Estructura del Proyecto
 
@@ -17,7 +19,7 @@ El proyecto está estructurado de la siguiente manera:
 
 - Bootstrap: Utilizado para el diseño y la maquetación del sitio.
 
-### 2- Link de carpetas de stilos.
+### 2- Link de carpetas de stylos.
 
 ### 3- link de font awesome
 
