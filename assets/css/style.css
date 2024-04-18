@@ -82,10 +82,7 @@ footer {
     margin: 15px 15px;
   }
 }
-#menu-nav {
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-}
+
 
 .custom-canvitas{
   max-width: 200px;
