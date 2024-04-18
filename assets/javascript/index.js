@@ -21,5 +21,4 @@ $(document).ready(function() {
 //inicio en jquery para toolstip para no perderme
 $('[data-bs-toggle="tooltip"]').tooltip();
 
-
 });
